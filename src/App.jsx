@@ -204,21 +204,21 @@ function App() {
                 <a
                   target="_blank"
                   href="https://www.booking.com/hotel/mx/vive-place.es-mx.html?aid=356980&dest_id=7252021&dest_type=hotel&group_adults=2&group_children=0&label=gog235jc-1DCAMooAFCDmFndWFzY2FsaWVudGVzSFJYA2igAYgBAZgBUrgBB8gBDNgBA-gBAfgBAogCAagCA7gC2qSqrgbAAgHSAiQ2NGUzMjc1My1mNmQxLTRjMDAtYTBiMS1lYzU5Zjc4YjA5ZjDYAgTgAgE-Share-7kb8Di%401707774599&no_rooms=1&req_adults=2&req_children=0"
-                  className="block  underline py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300"
+                  className="block  underline py-2 px-4 rounded-md  transition duration-300"
                 >
                   Hotel Vice Place
                 </a>
                 <a
                   target="_blank"
                   href="https://www.booking.com/hotel/mx/ibis-budget-aguascalientes-norte.es-mx.html?aid=356980&label=gog235jc-1FCAMooAFCDmFndWFzY2FsaWVudGVzSFJYA2igAYgBAZgBUrgBB8gBDNgBAegBAfgBAogCAagCA7gC2qSqrgbAAgHSAiQ2NGUzMjc1My1mNmQxLTRjMDAtYTBiMS1lYzU5Zjc4YjA5ZjDYAgXgAgE&sid=7ba0767f1fac84cde6dfd92a8b67d303&all_sr_blocks=448067602_135050967_2_2_0;checkin=2024-03-09;checkout=2024-03-10;dest_id=4480676;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=448067602_135050967_2_2_0;hpos=1;matching_block_id=448067602_135050967_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=448067602_135050967_2_2_0__71155;srepoch=1707774742;srpvid=5dbb99c8691e004f;type=total;ucfs=1&#hotelTmpl"
-                  className="block underline  py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300"
+                  className="block underline  py-2 px-4 rounded-md  transition duration-300"
                 >
                   Ibis Budget Aguascalientes Norte
                 </a>
                 <a
                   target="_blank"
                   href="https://www.booking.com/hotel/mx/aranzazu-plaza-kristal-aguascalientes.es-mx.html?aid=356980&checkin=2024-03-09&checkout=2024-03-10&dest_id=22527&dest_type=hotel&group_adults=2&group_children=0&label=gog235jc-1DCAMooAFCDmFndWFzY2FsaWVudGVzSFJYA2igAYgBAZgBUrgBB8gBDNgBA-gBAfgBAogCAagCA7gC2qSqrgbAAgHSAiQ2NGUzMjc1My1mNmQxLTRjMDAtYTBiMS1lYzU5Zjc4YjA5ZjDYAgTgAgE-Share-3m6MXd%401707774796&no_rooms=1&req_adults=2&req_children=0"
-                  className="block underline  py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300"
+                  className="block underline  py-2 px-4 rounded-md  transition duration-300"
                 >
                   Aranzazu Plaza Kristal Aguascalientes
                 </a>
@@ -236,7 +236,7 @@ function App() {
                 <a
                   href="https://wa.me/+524491129140?text=Hola! Confirmo Asistencia para la Boda"
                   target="_blank"
-                  class="m-auto mb-10 mt-5 font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] hover:from-yellow-600 hover:via-yellow-500 hover:to-yellow-600"
+                  class="m-auto mb-10 mt-5 font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] "
                 >
                   Confirmar Asistencia
                 </a>
