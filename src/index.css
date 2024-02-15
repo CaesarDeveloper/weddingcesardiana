@@ -24,6 +24,7 @@
 body {
   font-family: Arial, Helvetica, Sans-serif;
   background-color: #f7f9ff;
+  margin-top: -5px !important;
 }
 img {
   max-width: 100%;
