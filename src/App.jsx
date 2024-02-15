@@ -1,6 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import cdCover from "./assets/cdcover.png";
 import decorationTopRight from "./assets/decorationTopRight.png";
 import decorationTopLeft from "./assets/decorationTopLeft.png";
@@ -13,58 +10,73 @@ import rightDecorators from "./assets/rightDecorators.png";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
   const links = [
     { label: "Instagram", link: "https://www.instagram.com/" },
     { label: "Twitter", link: "https://twitter.com/" },
     { label: "LinkedIn", link: "https://www.linkedin.com/" },
     // Add more links as needed
   ];
-  //i.imgur.com/t6ffnbn.png
+  //i.imgur.com/t6ffnbn.png}
+  const handleClicWhatsapp = () => {
+    window.open(
+      "https://wa.me/+524491129140?text=Hola! Confirmo Asistencia para la Boda",
+      "_blank"
+    );
+  };
+
+  const handleClicLocation = () => {
+    window.open("https://maps.app.goo.gl/UcZ4tDRivFsKKYwXA", "_blank");
+  };
 
   return (
-    <div class="container mx-auto">
+    <div className="container mx-auto">
       {/* Top left decoration */}
       <img
         src={decorationTopLeft}
         alt="image-top-left"
-        class="top-left-decoration absolute top-0 right-0"
+        className="top-left-decoration absolute top-0 right-0"
+        style={{
+          opacity: "0.8",
+        }}
       />
       <img
         src={decorationTopRight}
         alt="image-top-right"
-        class="top-right-decoration absolute top-0 right-0"
+        className="top-right-decoration absolute top-0 right-0"
+        style={{
+          opacity: "0.5",
+        }}
       />
 
       <img
         src={leftDecorators}
         alt="image-top-right"
-        class="top-left-decoration-variable-a absolute top-0 right-0"
+        className="top-left-decoration-variable-a absolute top-0 right-0"
       />
 
       <img
         src={leftDecorators}
         alt="image-top-right"
-        class="top-left-decoration-variable-b absolute top-0 right-0"
+        className="top-left-decoration-variable-b absolute top-0 right-0"
       />
 
       <img
         src={rightDecorators}
         alt="image-top-right"
-        class="top-right-decoration-variable-a absolute top-0 right-0"
+        className="top-right-decoration-variable-a absolute top-0 right-0"
       />
 
       <img
         src={rightDecorators}
         alt="image-top-right"
-        class="top-right-decoration-variable-b absolute top-0 right-0"
+        className="top-right-decoration-variable-b absolute top-0 right-0"
       />
 
       {/* First section */}
-      <div class="wrap">
-        <div class="title relative">
+      <div className="wrap">
+        <div className="title relative">
           <img
-            alt="César & Diana"
+            alt="CésarDiana"
             className="mb-4 w-full h-auto"
             src={cdCover}
             style={{
@@ -76,7 +88,7 @@ function App() {
             }}
           />
           <div
-            class="absolute text-white p-4 bottom-0 right-0 left-0"
+            className="absolute text-white p-4 bottom-0 right-0 left-0"
             style={{
               zIndex: 222,
               paddingBottom: "65px",
@@ -93,14 +105,15 @@ function App() {
       </div>
 
       {/* Second section */}
-      <div class="wrap relative">
-        {/* <img
-          src={decorationTopRight}
-          alt="image-top-right"
-          class="top-right-decoration absolute top-0 right-0"
-        /> */}
-        <div class="title">
-          <h3 class="!text-2xl md:!text-3xl lg:!text-3xl pt-16 pb-6 !font-bold">
+      <div className="wrap relative">
+        <div className="title">
+          <h3
+            className="!text-2xl md:!text-3xl lg:!text-3xl pt-16 pb-6 !font-bold"
+            style={{
+              position: "relative",
+              zIndex: 1,
+            }}
+          >
             Cómo Nos Conocimos
           </h3>
           <img
@@ -108,9 +121,14 @@ function App() {
             alt="howmet"
             width={450}
             className=" items-center m-auto"
+            style={{
+              position: "relative",
+              zIndex: 1,
+            }}
+            S
           />
           <p
-            class="text-sm md:text-base"
+            className="text-sm md:text-base"
             style={{
               marginLeft: "100px",
               marginRight: "100px",
@@ -124,8 +142,8 @@ function App() {
           </p>
         </div>
 
-        <div class="title">
-          <h3 class="!text-2xl md:!text-3xl lg:!text-3xl pt-16 pb-6 !font-bold">
+        <div className="title">
+          <h3 className="!text-2xl md:!text-3xl lg:!text-3xl pt-16 pb-6 !font-bold">
             La Propuesta
           </h3>
           <img
@@ -135,7 +153,7 @@ function App() {
             className=" items-center m-auto"
           />
           <p
-            class="text-sm md:text-base"
+            className="text-sm md:text-base"
             style={{
               marginLeft: "100px",
               marginRight: "100px",
@@ -156,7 +174,7 @@ function App() {
             className="m-auto"
           />
           <p
-            class="text-sm md:text-base font-bold"
+            className="text-sm md:text-base font-bold"
             style={{
               marginLeft: "100px",
               marginRight: "100px",
@@ -174,8 +192,13 @@ function App() {
         </div>
       </div>
 
-      <div class="wrap relative">
-        <div className=" p-6  mx-auto  text-left pl-28 pr-28">
+      <div className="wrap relative">
+        <div
+          className="p-6  mx-auto text-left"
+          style={{
+            paddingLeft: "35px",
+          }}
+        >
           <ul className="space-y-4">
             <li className="flex items-center space-x-3">
               <CalendarIcon className="text-gray-400 flex-shrink-0" />
@@ -194,6 +217,17 @@ function App() {
               <span className="text-gray-700">
                 Salón de fiestas Villa Victoria
               </span>
+            </li>
+            <li className="items-center m-auto">
+              <center className="p-5">
+                <button
+                  onClick={handleClicLocation}
+                  onTouchStart={handleClicLocation}
+                  className="m-auto font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] "
+                >
+                  Ver Ubicación
+                </button>
+              </center>
             </li>
             <li className="flex space-x-3">
               <HotelIcon className="text-gray-400 flex-shrink-0" />
@@ -233,13 +267,12 @@ function App() {
             </li>
             <li className="items-center m-auto">
               <center className="p-10">
-                <a
-                  href="https://wa.me/+524491129140?text=Hola! Confirmo Asistencia para la Boda"
-                  target="_blank"
-                  class="m-auto mb-10 mt-5 font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] "
+                <button
+                  onClick={handleClicWhatsapp}
+                  className="m-auto font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] "
                 >
                   Confirmar Asistencia
-                </a>
+                </button>
               </center>
             </li>
           </ul>
@@ -247,7 +280,7 @@ function App() {
       </div>
 
       {/* Text section */}
-      <div class="wrap relative">
+      <div className="wrap relative">
         <center>
           <img
             src={linearGold}
@@ -256,9 +289,9 @@ function App() {
             className="m-auto"
           />
           <GiftIcon className="text-gray-400 flex-shrink-0 mt-10" />
-          <div class="title">
+          <div className="title">
             <p
-              class="text-sm md:text-base"
+              className="text-sm md:text-base"
               style={{
                 marginLeft: "100px",
                 marginRight: "100px",
@@ -271,7 +304,7 @@ function App() {
             </p>
 
             <p
-              class="text-sm md:text-base font-bold"
+              className="text-sm md:text-base font-bold"
               style={{
                 marginLeft: "100px",
                 marginRight: "100px",
