@@ -192,7 +192,14 @@ function App() {
         </div>
       </div>
 
-      <div className="wrap relative">
+      <div
+        className="wrap relative"
+        style={{
+          zIndex: "10000 !important",
+          position: "relative",
+          background: "none !important",
+        }}
+      >
         <div
           className="p-6  mx-auto text-left"
           style={{
@@ -221,9 +228,8 @@ function App() {
             <li className="items-center m-auto">
               <center className="p-5">
                 <button
-                  onClick={handleClicLocation}
-                  onTouchStart={handleClicLocation}
                   className="m-auto font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] "
+                  onClick={handleClicLocation}
                 >
                   Ver Ubicación
                 </button>
