@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.allura-regular {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arimo-regular {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*******************************/
+
+#root {
+  padding: 0px !important;
+}
+body {
+  font-family: Arial, Helvetica, Sans-serif;
+  background-color: #f7f9ff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* @media (max-width: 900px) {
+  img {
+    max-width: 30%;
+  }
+} */
+
+.top-right-decoration {
+  position: absolute;
+  /* top: -50px; */
+  top: 808px;
+  right: 0px;
+  display: block;
+  z-index: 1;
+  width: 230px;
+}
+
+.top-right-decoration-variable-a {
+  position: absolute;
+  /* top: -50px; */
+  top: 908px;
+  right: 0px;
+  display: block;
+  z-index: 1;
+  width: 230px;
+}
+
+.top-right-decoration-variable-b {
+  position: absolute;
+  /* top: -50px; */
+  top: 2050px;
+  right: 0px;
+  display: block;
+  z-index: 1;
+  width: 230px;
+}
+
+.top-left-decoration {
+  position: absolute;
+  top: 808px;
+  left: 0;
+  display: block;
+  z-index: 1;
+  width: 250px;
+}
+
+.top-left-decoration-variable-a {
+  position: absolute;
+  top: 908px;
+  left: 0;
+  display: block;
+  z-index: 1;
+  width: 250px;
+}
+
+.top-left-decoration-variable-b {
+  position: absolute;
+  top: 2050px;
+  left: 0;
+  display: block;
+  z-index: 1;
+  width: 250px;
+}
+
+.title h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px;
+  margin: 5px 0;
+
+  color: #ffffff;
+}
+
+.title h2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #e25c67;
+  line-height: 1;
+}
+
+.dance-med {
+  font-family: "Dancing Script", cursive;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  color: #674ea7;
+}
+
+.title h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 16px;
+  color: #674ea7;
+  margin-top: 5px;
+}
+
+.title p {
+  color: #564861;
+  margin: 17px 0 17px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.wrap {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+  /* padding: 20px; */
+  text-align: center;
+  min-height: 100%;
+  background: #f7f9ff;
+  margin: auto;
+  /* max-width: 700px; */
+}
+
+.title-description {
+  font-size: 1rem !important;
+  color: #ffffff !important;
+}
