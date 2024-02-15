@@ -157,3 +157,9 @@ img {
   font-size: 1rem !important;
   color: #ffffff !important;
 }
+
+.timeline-container {
+  position: relative;
+  z-index: 10000;
+  background: none;
+}

@@ -192,14 +192,7 @@ function App() {
         </div>
       </div>
 
-      <div
-        className="wrap relative"
-        style={{
-          zIndex: "10000 !important",
-          position: "relative",
-          background: "none !important",
-        }}
-      >
+      <div className="wrap relative timeline-container">
         <div
           className="p-6  mx-auto text-left"
           style={{
