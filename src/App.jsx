@@ -194,7 +194,7 @@ function App() {
 
       <div className="wrap relative timeline-container">
         <div
-          className="p-6  mx-auto text-left"
+          className="p-6 mx-auto text-left list-container"
           style={{
             paddingLeft: "35px",
           }}
@@ -211,7 +211,16 @@ function App() {
             <li className="flex items-center space-x-3">
               <MenuIcon className="text-gray-400 flex-shrink-" />
               <span className="text-gray-700">8 PM | Cena</span>
+              <br />
             </li>
+
+            <li>
+              <span className="text-gray-700 font-semibold">
+                Nosotros ponemos la comida, los refrescos y los hielos… Tu
+                bebida favorita también es bienvenida.
+              </span>
+            </li>
+
             <li className="flex items-center space-x-3">
               <LocateIcon className="text-gray-400 flex-shrink-0" />
               <span className="text-gray-700">

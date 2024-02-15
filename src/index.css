@@ -164,3 +164,9 @@ img {
   z-index: 10000;
   background: none;
 }
+
+.list-container {
+  font-family: "Arimo", sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 15px;
+}
