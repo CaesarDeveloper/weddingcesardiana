@@ -276,8 +276,8 @@ function App() {
                 <br />
                 <br />
                 Para nosotros es muy importante contar contigo, por favor
-                confirma tu asistencia en el botón de abajo antes de{" "}
-                <strong>1 de Marzo 2024</strong> en el botón de abajo
+                confirma tu asistencia antes del <strong>1 de Marzo</strong> en
+                el botón de abajo
               </span>
             </li>
             <li className="items-center m-auto">
