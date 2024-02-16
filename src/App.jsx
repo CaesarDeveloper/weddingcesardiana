@@ -266,11 +266,18 @@ function App() {
                 </a>
               </span>
             </li>
-            <li className="flex items-center space-x-3">
+            <li className="flex space-x-3">
               <MessageCircleIcon className="text-gray-400 flex-shrink-0" />
+
               <span className="text-gray-700">
+                <span className="text-gray-700 font-semibold">
+                  Niños: buenas noches. Adultos: ¡buena noche!
+                </span>
+                <br />
+                <br />
                 Para nosotros es muy importante contar contigo, por favor
-                confirma tu asistencia en el botón de abajo
+                confirma tu asistencia en el botón de abajo antes de{" "}
+                <strong>1 de Marzo 2024</strong> en el botón de abajo
               </span>
             </li>
             <li className="items-center m-auto">
