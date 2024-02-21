@@ -6,26 +6,40 @@ import propuesta from "./assets/propuesta.png";
 import linearGold from "./assets/linearGold.png";
 import leftDecorators from "./assets/leftDecorators.png";
 import rightDecorators from "./assets/rightDecorators.png";
-
 import "./App.css";
+import { useEffect, useState } from "react";
 
 function App() {
-  const links = [
-    { label: "Instagram", link: "https://www.instagram.com/" },
-    { label: "Twitter", link: "https://twitter.com/" },
-    { label: "LinkedIn", link: "https://www.linkedin.com/" },
-    // Add more links as needed
-  ];
   //i.imgur.com/t6ffnbn.png}
+  const [animate, setAnimate] = useState(false);
+
+  const [animateL, setAnimateL] = useState(false);
+
   const handleClicWhatsapp = () => {
-    window.open(
-      "https://wa.me/+524491129140?text=Hola! Confirmo Asistencia para la Boda",
-      "_blank"
-    );
+    setAnimate(true);
+
+    setTimeout(() => {
+      setAnimate(false);
+    }, 500);
+
+    setTimeout(() => {
+      window.open(
+        "https://wa.me/+524491129140?text=Hola! Confirmo Asistencia para la Boda",
+        "_blank"
+      );
+    }, 700);
   };
 
   const handleClicLocation = () => {
-    window.open("https://maps.app.goo.gl/UcZ4tDRivFsKKYwXA", "_blank");
+    setAnimateL(true);
+
+    setTimeout(() => {
+      setAnimateL(false);
+    }, 500);
+
+    setTimeout(() => {
+      window.open("https://maps.app.goo.gl/UcZ4tDRivFsKKYwXA", "_blank");
+    }, 700);
   };
 
   return (
@@ -230,7 +244,9 @@ function App() {
             <li className="items-center m-auto">
               <center className="p-5">
                 <button
-                  className="m-auto font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] "
+                  className={`button m-auto font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] ${
+                    animateL ? "animate" : ""
+                  }`}
                   onClick={handleClicLocation}
                 >
                   Ver Ubicación
@@ -284,7 +300,9 @@ function App() {
               <center className="p-10">
                 <button
                   onClick={handleClicWhatsapp}
-                  className="m-auto font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] "
+                  className={`button m-auto font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] ${
+                    animate ? "animate" : ""
+                  }`}
                 >
                   Confirmar Asistencia
                 </button>
@@ -294,15 +312,23 @@ function App() {
         </div>
       </div>
 
+      <div className="wrap relative title">
+        <img src={linearGold} alt="linearGold" width={400} className="m-auto" />
+        <p
+          className="text-sm md:text-base font-bold"
+          style={{
+            marginLeft: "100px",
+            marginRight: "100px",
+          }}
+        >
+          Código de vestimenta: Formal-Casual
+        </p>
+        <img src={linearGold} alt="linearGold" width={400} className="m-auto" />
+      </div>
+
       {/* Text section */}
       <div className="wrap relative">
         <center>
-          <img
-            src={linearGold}
-            alt="linearGold"
-            width={400}
-            className="m-auto"
-          />
           <GiftIcon className="text-gray-400 flex-shrink-0 mt-10" />
           <div className="title">
             <p
@@ -326,7 +352,9 @@ function App() {
               }}
             >
               Beneficiario: Diana Elizabeth Cruz Macías Cuenta: 142 593 4397
-              Tarjeta: 4152314160519248 BBVA
+              <br />
+              Tarjeta: 4152314160519248 <br />
+              BBVA
             </p>
             <img
               src={linearGold}
