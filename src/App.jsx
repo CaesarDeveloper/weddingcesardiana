@@ -134,7 +134,7 @@ function App() {
               marginRight: "100px",
             }}
           >
-            Después de hacer _#4d, atrave9osar media as, sobrevivir a una
+            Después de hacer match, atravesar media pandemia, sobrevivir a una
             relación a distancia, mudarse de ciudad, pasar por alegrías,
             tristezas, enojos, pero sobre todo por mucho amor, hemos decidido
             darnos el sí, sí al amor, sí a la felicidad ¡Sí a pasar el resto de
@@ -231,7 +231,7 @@ function App() {
               <center className="p-5">
                 <button
                   className="m-auto font-bold bg-gradient-to-r from-[#DF9874] via-[#E7C1AB] to-[#E2BAA0] text-white py-4 px-6 rounded-[10px] "
-                  onClick={null}
+                  onClick={handleClicLocation}
                 >
                   Ver Ubicación
                 </button>
